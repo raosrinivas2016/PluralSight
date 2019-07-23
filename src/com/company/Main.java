@@ -3,13 +3,7 @@ package com.company;
 public class Main {
 
     public static void main( String[] args ) {
-        System.out.println( "hello world" );
-
-        /*if ( EnumTest.china.getLanugages() == "5" ) {
-            System.out.println( "good" );
-        }*/
-
-        java.nio.file.Path path = java.nio.file.Paths.get("C:\\Developement","persons.txt");
+      java.nio.file.Path path = java.nio.file.Paths.get("C:\\Developement","persons.txt");
 
         try(java.util.stream.Stream<String> lines = java.nio.file.Files.lines( path );){
             java.util.Spliterator<String> lineSpliterator = lines.spliterator();
